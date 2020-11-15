@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Home"
+        android:icon="@drawable/icon_home"
+        android:id="@+id/fragmentHome"/>
+
+<!--    <item-->
+<!--        android:title="Issue Page"-->
+<!--        android:icon="@drawable/icon_issue"-->
+<!--        android:id="@+id/menu_issue_page"/>-->
+
+    <item
+        android:title="Issue List"
+        android:icon="@drawable/icon_issue"
+        android:id="@+id/fragmentIssueList"/>
+
+    <item
+        android:title="Profile"
+        android:icon="@drawable/icon_person"
+        android:id="@+id/fragmentProfile"/>
+
+<!--    <item-->
+<!--        android:id="@+id/menu_login"-->
+<!--        android:title="Login"/>-->
+
+</menu>

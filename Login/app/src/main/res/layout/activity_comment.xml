@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommentActivity">
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/text_all_id"-->
+<!--        android:text="wow"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_comment"-->
+<!--        android:layout_alignTop="@+id/edit_comment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Click here"-->
+<!--        />-->
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/comment_swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/comment_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+    <!--<RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">-->
+
+
+    <EditText
+        android:id="@+id/edit_comment"
+        android:layout_toLeftOf="@+id/img_comment_send"
+        android:inputType="textMultiLine"
+        android:hint="Add a comment..."
+        android:maxLines="3"
+        android:minLines="1"
+        android:padding="12dp"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"/>
+
+
+    <ImageView
+        android:id="@+id/img_comment_send"
+        android:src="@drawable/send"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <!--</RelativeLayout>-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/edit_comment"-->
+<!--        android:layout_toLeftOf="@+id/img_comment_send"-->
+<!--        android:inputType="textMultiLine"-->
+<!--        android:hint="Enter your comment"-->
+<!--        android:maxLines="3"-->
+<!--        android:minLines="1"-->
+<!--        android:padding="12dp"-->
+<!--        android:textSize="20dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:scrollbars="vertical"/>-->
+
+
+
+</RelativeLayout>
